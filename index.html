@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Interface</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>User Management Interface</h1>
+    <div>
+        <h2>Get All Users</h2>
+        <button onclick="getAllUsers()">Get Users</button>
+        <pre id="all-users"></pre>
+    </div>
+    <div>
+        <h2>Get User By ID</h2>
+        <input type="number" id="get-user-id" placeholder="User ID" aria-label="User ID">
+        <button onclick="getUserById()">Get User</button>
+        <pre id="user-details"></pre>
+    </div>
+    <div>
+        <h2>Create User</h2>
+        <input type="text" id="create-user-name" placeholder="Name" aria-label="Name" required>
+        <input type="email" id="create-user-email" placeholder="Email" aria-label="Email" required>
+        <button onclick="createUser()">Create User</button>
+    </div>
+    <div>
+        <h2>Update User</h2>
+        <input type="number" id="update-user-id" placeholder="User ID" aria-label="User ID">
+        <input type="text" id="update-user-name" placeholder="Name" aria-label="Name">
+        <input type="email" id="update-user-email" placeholder="Email" aria-label="Email">
+        <button onclick="updateUser()">Update User</button>
+    </div>
+    <div>
+        <h2>Delete User</h2>
+        <input type="number" id="delete-user-id" placeholder="User ID" aria-label="User ID">
+        <button onclick="deleteUser()">Delete User</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
